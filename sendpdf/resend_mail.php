@@ -502,16 +502,16 @@ if (isset($_GET['mail_sent'])) {
     $mail->Username = 'swrapfoil@gmail.com';                    //Sets SMTP username
     $mail->Password = 'nratbfjkgipxzznj';                    //Sets SMTP password
     $mail->SMTPSecure = 'ssl';                            //Sets connection prefix. Options are "", "ssl" or "tls"
-    $mail->SetFrom("swrapfoil@gmail.com", "Silver Wrap");
+    $mail->SetFrom("swrapfoil@gmail.com", "MS Foils");
     $mail->addCC('shirsatbp@gmail.com');
-    $mail->AddReplyTo("swrapfoil@gmail.com", "Silver Wrap");
+    $mail->AddReplyTo("swrapfoil@gmail.com", "MS Foils");
     for ($i = 0; $i < count($str_arr); $i++) {
         $mail->AddAddress('shirsatbp@gmail.com', 'Invoice');        //Adds a "To" address
     }
     // $mail->WordWrap = 50;							//Sets word wrapping on the body of the message to a given number of characters
     $mail->IsHTML(true);
     $mail->AddAttachment($file_name);
-    $mail->Subject = 'Purchase Order from Silver Wrap PO No.' . $mail_inc_no;            //Sets the Subject of the message
+    $mail->Subject = 'Purchase Order from MS Foils PO No.' . $mail_inc_no;            //Sets the Subject of the message
     $mail->Body     = "<html><body><p><b>Dear Team, </b></p><p><i>Wellness Greetings.</i></p></body></html>";
     $mail->Body     .= "<html><body><p><b>I hope you’re well. Please see attached invoice. Don’t hesitate to reach out if you have any questions.</b></p><p><i>Kind Regards.</i></p></body></html>";
     if ($mail->Send())                                //Send an Email. Return true on success or false on error

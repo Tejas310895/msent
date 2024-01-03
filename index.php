@@ -31,8 +31,8 @@ if (!isset($_SESSION['admin_user'])) {
             <li class="nav-item dropdown">
               <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
                 <div class="navbar-profile">
-                  <img class="img-xs rounded-circle" src="assets/images/face.jpeg" alt="">
-                  <p class="mb-0 d-none d-sm-block navbar-profile-name">Silver Wrap</p>
+                  <img class="img-xs rounded-circle" src="" alt="">
+                  <p class="mb-0 d-none d-sm-block navbar-profile-name">MS Foils</p>
                   <i class="mdi mdi-menu-down d-none d-sm-block"></i>
                 </div>
               </a>
