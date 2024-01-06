@@ -37,7 +37,6 @@ if (!isset($_SESSION['admin_user'])) {
                 </div>
               </a>
               <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
-                <h6 class="p-3 mb-0 text-center">Profile</h6>
                 <div class="dropdown-divider"></div>
                 <!-- <a class="dropdown-item preview-item">
                     <div class="preview-thumbnail">
