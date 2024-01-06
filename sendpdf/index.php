@@ -13,9 +13,7 @@
 	// $customer_email = 'tshirsat700@gmail.com';
 	$message = '';
 
-	// $connect = mysqli_connect('localhost:3308', 'root', '', 'swaf');
-	// $connect = mysqli_connect('localhost:3308', 'root', '', 'swaf');
-	$connect = mysqli_connect('localhost', 'u708087849_swaf', 'Silverwrap@11', 'u708087849_swaf');
+	$con = mysqli_connect('localhost', 'u361889932_msent', 'R4n!WMyfYvt!', 'u361889932_msent');
 
 	$get_inc_ref = "select * from po_entries where po_number='$mail_inc_id'";
 	$run_inc_ref = mysqli_query($connect, $get_inc_ref);
@@ -501,12 +499,12 @@
 	$mail->SMTPKeepAlive = true;
 	$mail->Port = 465;								//Sets the default SMTP server port
 	$mail->SMTPAuth = true;							//Sets SMTP authentication. Utilizes the Username and Password variables
-	$mail->Username = 'swrapfoil@gmail.com';					//Sets SMTP username
+	$mail->Username = 'shirsatbp@gmail.com';					//Sets SMTP username
 	$mail->Password = 'nratbfjkgipxzznj';					//Sets SMTP password
 	$mail->SMTPSecure = 'ssl';							//Sets connection prefix. Options are "", "ssl" or "tls"
-	$mail->SetFrom("swrapfoil@gmail.com", "MS Foils");
+	$mail->SetFrom("shirsatbp@gmail.com", "MS Foils");
 	$mail->addCC('shirsatbp@gmail.com');
-	$mail->AddReplyTo("swrapfoil@gmail.com", "MS Foils");		//Sets the From name of the message
+	$mail->AddReplyTo("shirsatbp@gmail.com", "MS Foils");		//Sets the From name of the message
 	$mail->AddAddress($customer_email, 'Invoice');		//Adds a "To" address
 	// $mail->WordWrap = 50;							//Sets word wrapping on the body of the message to a given number of characters
 	$mail->IsHTML(true);

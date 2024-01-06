@@ -10,17 +10,15 @@ if (isset($_GET['mail_sent'])) {
     // var_dump($attachment);
     $mail_inc_id = $_GET['mail_sent'];
 
-    // $mail_inc_id = 'BS22-23/004';
-    // $customer_email = 'tshirsat700@gmail.com';
+
     $message = '';
 
     if ($_SERVER['HTTP_HOST'] == 'localhost') {
         $connect = mysqli_connect('localhost', 'root', '', 'swaf');
     } else {
-        $connect = mysqli_connect('localhost', 'u708087849_swaf', 'Silverwrap@11', 'u708087849_swaf');
+        $con = mysqli_connect('localhost', 'u361889932_msent', 'R4n!WMyfYvt!', 'u361889932_msent');
     }
-    // $connect = mysqli_connect('localhost:3308', 'root', '', 'swaf');
-    // $connect = mysqli_connect('localhost', 'u708087849_swaf', 'Silverwrap@11', 'u708087849_swaf');
+
 
     $get_inc_ref = "select * from po_entries where po_number='$mail_inc_id'";
     $run_inc_ref = mysqli_query($connect, $get_inc_ref);
@@ -499,12 +497,12 @@ if (isset($_GET['mail_sent'])) {
     $mail->SMTPKeepAlive = true;
     $mail->Port = 465;                                //Sets the default SMTP server port
     $mail->SMTPAuth = true;                            //Sets SMTP authentication. Utilizes the Username and Password variables
-    $mail->Username = 'swrapfoil@gmail.com';                    //Sets SMTP username
+    $mail->Username = 'shirsatbp@gmail.com';                    //Sets SMTP username
     $mail->Password = 'nratbfjkgipxzznj';                    //Sets SMTP password
     $mail->SMTPSecure = 'ssl';                            //Sets connection prefix. Options are "", "ssl" or "tls"
-    $mail->SetFrom("swrapfoil@gmail.com", "MS Foils");
+    $mail->SetFrom("shirsatbp@gmail.com", "MS Foils");
     $mail->addCC('shirsatbp@gmail.com');
-    $mail->AddReplyTo("swrapfoil@gmail.com", "MS Foils");
+    $mail->AddReplyTo("shirsatbp@gmail.com", "MS Foils");
     for ($i = 0; $i < count($str_arr); $i++) {
         $mail->AddAddress('shirsatbp@gmail.com', 'Invoice');        //Adds a "To" address
     }
