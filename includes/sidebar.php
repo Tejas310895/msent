@@ -47,8 +47,6 @@
       <div class="collapse" id="ui-product">
         <ul class="nav flex-column sub-menu">
           <li class="nav-item"> <a class="nav-link" href="index.php?work_orders">WORK ORDER</a></li>
-          <li class="nav-item"> <a class="nav-link" href="index.php?view_product">BUILD NEW PRODUCT</a></li>
-          <li class="nav-item"> <a class="nav-link" href="index.php?view_carton">ADD PACK SIZE</a></li>
           <li class="nav-item"> <a class="nav-link" href="index.php?view_manufacturing">TODAY READY STOCK</a></li>
           <li class="nav-item"> <a class="nav-link" href="index.php?product_stock">READY STOCK IN FACTORY</a></li>
         </ul>
