@@ -138,7 +138,7 @@ if (isset($_POST['submit'])) {
         $run_carton_stock = mysqli_query($con, $update_carton_stock);
 
         echo "<script>alert('Done')</script>";
-        echo "<script>window.open('../index.php?view_manufacturing','_self')</script>";
+        echo "<script>window.open('../print_stock.php?print_id=$print_id','_self')</script>";
     }
 }
 
