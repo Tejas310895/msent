@@ -521,7 +521,7 @@ if (isset($_GET['mail_sent'])) {
         echo "<script>window.open('../index.php?view_poentry','_self')</script>";
         echo 'Mailer Error: ' . $mail->ErrorInfo;
     }
-    unlink($file_name);
+    //unlink($file_name);
 } else {
     echo "<script>alert('PO number invalid! Try again')</script>";
     echo "<script>window.open('../index.php?sales_invoices','_self')</script>";
