@@ -497,10 +497,10 @@ if (isset($_GET['mail_sent'])) {
     $mail->SMTPKeepAlive = true;
     $mail->Port = 465;                                //Sets the default SMTP server port
     $mail->SMTPAuth = true;                            //Sets SMTP authentication. Utilizes the Username and Password variables
-    $mail->Username = 'shirsatbp@gmail.com';                    //Sets SMTP username
+    $mail->Username = 'swrapfoil@gmail.com';                    //Sets SMTP username
     $mail->Password = 'nratbfjkgipxzznj';                    //Sets SMTP password
     $mail->SMTPSecure = 'ssl';                            //Sets connection prefix. Options are "", "ssl" or "tls"
-    $mail->SetFrom("shirsatbp@gmail.com", "MS Foils");
+    $mail->SetFrom("swrapfoil@gmail.com", "MS Foils");
     $mail->addCC('shirsatbp@gmail.com');
     $mail->AddReplyTo("shirsatbp@gmail.com", "MS Foils");
     for ($i = 0; $i < count($str_arr); $i++) {
