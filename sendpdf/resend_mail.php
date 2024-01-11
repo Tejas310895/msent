@@ -16,7 +16,7 @@ if (isset($_GET['mail_sent'])) {
     if ($_SERVER['HTTP_HOST'] == 'localhost') {
         $connect = mysqli_connect('localhost', 'root', '', 'swaf');
     } else {
-        $con = mysqli_connect('localhost', 'u361889932_msent', 'R4n!WMyfYvt!', 'u361889932_msent');
+        $connect = mysqli_connect('localhost', 'u361889932_msent', 'R4n!WMyfYvt!', 'u361889932_msent');
     }
 
 
