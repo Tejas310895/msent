@@ -313,7 +313,7 @@ if (isset($_GET['mail_sent'])) {
                 <h5 class="text-uppercase my-2">Price: Ex-Factory </h5>
                 <h5 class="text-uppercase my-2">Delivery : Immediate </h5>
                 <h5 class="text-uppercase my-2">Tax : GST</h5>
-                <h5 class="text-uppercase mb-0 mt-1">GSTIN : 27AAVFB4499H1ZP</h5>
+                <h5 class="text-uppercase mb-0 mt-1">GSTIN : 27AASFB2385F1Z7</h5>
             </th>
             <th style="width:30%">
                 <h6 class="font-weight-bold" style="font-size:1.5rem;text-align:center;">Customer Signature</h6>
