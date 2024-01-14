@@ -66,7 +66,10 @@ if (!isset($_SESSION['admin_user'])) {
                                         <td><?php echo $carton_title; ?></td>
                                         <td><?php echo $manufacturing_carton_qty * $carton_qty; ?></td>
                                         <td><?php echo $manufacturing_carton_qty; ?></td>
-                                        <td> <a href="print_ready.php?print_id=<?php echo $print_id; ?>" class="btn btn-primary">Print</a> </td>
+                                        <td>
+                                            <a href="print_ready.php?print_id=<?php echo $print_id; ?>" class="btn btn-primary"><i class="fa fa-print"></i></a>
+                                            <a href="ajaxphp/ajaxhelper.php?delete_ready=<?php echo $manufacturing_id; ?>" class="btn btn-danger"><i class="fa fa-trash"></i></a>
+                                        </td>
                                     </tr>
                                 <?php } ?>
                             </tbody>
