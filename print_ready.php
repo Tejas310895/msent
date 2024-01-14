@@ -110,17 +110,21 @@ if (isset($_GET['print_id'])) {
     <div class="pagebreak mt-1 ml-1">
       <table class="text-dark">
         <tr>
-          <th>
+          <th id="pro">
             <h2 class="text-center text-dark p-0 mb-0 text-uppercase">
               PRODUCT : <?php echo $product_type; ?>
             </h2>
           </th>
         </tr>
         <tr>
-          <th class="px-auto d-block py-0" style="width:147vw;">
-            <h1 class="text-center mt-0" style="font-size:26rem;font-family:Anton;margin-top:-50px !important;"><?php echo $carton_lable; ?></h1>
-            <h1 class="text-center mt-0 text-uppercase" style="font-size:3.5rem;margin-top:-50px !important;"><?php echo $carton_sub_lable; ?></h1>
-            <h1 class="text-center mt-0"><?php echo $carton_box_size; ?></h1>
+          <th class="px-auto d-block py-0" style="width:147vw;line-height: 0px;">
+            <?php
+            $text_array = explode(' ', $product_name);
+            foreach ($text_array as $value) {
+            ?>
+              <h6 class="text-center mt-0" style="font-size:2rem;font-family:Anton;"><?php echo $value; ?></h6><br>
+            <?php } ?>
+            <h6 class="text-center mt-0 text-uppercase" style="font-size:3.5rem;"><?php echo $carton_qty . ' Pcs Box'; ?></h6>
           </th>
         </tr>
         <tr>
